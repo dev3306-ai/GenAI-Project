@@ -214,8 +214,8 @@ This project is developed as part of the GenAI course capstone project.
 
 ## 🔗 Links
 
-- **Live Demo**: [To be deployed]
-- **GitHub Repository**: [Your repo URL]
+- **Live Demo**: [https://solar-forecasting-genai.streamlit.app]
+- **GitHub Repository**: [https://github.com/dev3306-ai/GenAI-Project]
 - **Demo Video**: [To be uploaded]
 
 ## 📞 Contact
@@ -225,4 +225,4 @@ For questions or issues, please contact the team members or raise an issue in th
 ---
 
 **Version**: 1.0 (Milestone 1)  
-**Last Updated**: [Current Date]
+**Last Updated**: [26 February 2026]
