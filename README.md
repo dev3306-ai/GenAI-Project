@@ -23,20 +23,20 @@ This system addresses these challenges by providing accurate short-term and long
 └────────┬────────┘
          │
          ▼
-┌─────────────────┐
-│ Preprocessing   │
-│ - Missing vals  │
-│ - Scaling       │
-│ - Feature Eng   │
-└────────┬────────┘
+┌─────────────────────────┐
+│ Preprocessing           │
+│ - Missing values        │
+│ - Scaling               │
+│ - Feature Engineering   │
+└────────┬────────────────┘
          │
          ▼
-┌─────────────────┐
-│  ML Models      │
-│ - Random Forest │
-│ - Gradient Boost│
-│ - Linear Reg    │
-└────────┬────────┘
+┌────────────────────────┐
+│  ML Models             │
+│ - Random Forest        │
+│ - Gradient Boost       │
+│ - Linear Regression    │
+└────────┬───────────────┘
          │
          ▼
 ┌─────────────────┐
