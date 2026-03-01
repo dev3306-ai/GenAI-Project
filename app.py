@@ -18,12 +18,28 @@ st.markdown("### ML-Based Solar Power Generation Analytics")
 # Sidebar
 st.sidebar.header("Upload Dataset")
 
+# Option to use bundled default CSV or upload your own
+use_default = st.sidebar.checkbox("Use default example dataset")
+
 uploaded_file = st.sidebar.file_uploader("Upload Solar Data CSV", type=['csv'])
 
 df = None
-if uploaded_file:
+if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
-    st.sidebar.success("✅ Data loaded successfully!")
+    st.sidebar.success("✅ Data loaded successfully from uploaded file!")
+elif use_default:
+    # Let user pick between two bundled example datasets
+    sample_choice = st.sidebar.radio("Choose example dataset", ("Sample 1", "Sample 2"))
+    sample_map = {
+        "Sample 1": 'data/sample1.csv',
+        "Sample 2": 'data/sample2.csv'
+    }
+    sample_path = sample_map.get(sample_choice, 'data/sample1.csv')
+    try:
+        df = pd.read_csv(sample_path)
+        st.sidebar.success(f"✅ {sample_choice} loaded successfully!")
+    except Exception as e:
+        st.sidebar.error(f"Failed to load {sample_choice}: {e}")
 
 if df is not None:
     # Display data info
