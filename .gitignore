@@ -49,3 +49,7 @@ Thumbs.db
 
 # Streamlit
 .streamlit/
+
+# Allow tracking example datasets in data/ (explicit exceptions)
+!data/sample1.csv
+!data/sample2.csv
